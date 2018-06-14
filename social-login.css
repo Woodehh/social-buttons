@@ -1,7 +1,7 @@
 .sb {
   display: inline-block;
   height: 40px;
-  color: white;
+  color: white !important;
   font-family: sans-serif;
   padding-right: 15px;
   font-size: 15px;
@@ -23,7 +23,7 @@
 }
 .sb:hover {
   text-decoration: none;
-  color: white;
+  color: white !important;
 }
 .sb.sb-nb {
   border: 1px solid transparent;
