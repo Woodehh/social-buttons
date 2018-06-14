@@ -84,35 +84,35 @@ centers the text
 
 
 ## Available buttons:
-  * sb-facebook
- * sb-steam
- * sb-spotify
- * sb-discord
- * sb-wordpress
- * sb-twitch
- * sb-teamspeak
- * sb-slack
- * sb-youtube
- * sb-paypal
- * sb-google
- * sb-bitbucket
- * sb-twitter
- * sb-reddit
- * sb-adn
- * sb-bitbucket
- * sb-dropbox
- * sb-flickr
- * sb-foursquare
- * sb-github
- * sb-microsoft
- * sb-odnoklassniki
- * sb-openid
- * sb-pinterest
- * sb-soundcloud
- * sb-tumblr
- * sb-vimeo
- * sb-vk
- * sb-yahoo
+ * `sb-facebook`
+ * `sb-steam`
+ * `sb-spotify`
+ * `sb-discord`
+ * `sb-wordpress`
+ * `sb-twitch`
+ * `sb-teamspeak`
+ * `sb-slack`
+ * `sb-youtube`
+ * `sb-paypal`
+ * `sb-google`
+ * `sb-bitbucket`
+ * `sb-twitter`
+ * `sb-reddit`
+ * `sb-adn`
+ * `sb-bitbucket`
+ * `sb-dropbox`
+ * `sb-flickr`
+ * `sb-foursquare`
+ * `sb-github`
+ * `sb-microsoft`
+ * `sb-odnoklassniki`
+ * `sb-openid`
+ * `sb-pinterest`
+ * `sb-soundcloud`
+ * `sb-tumblr`
+ * `sb-vimeo`
+ * `sb-vk`
+ * `sb-yahoo`
 
 ## Need another button?
 Open up an issue!
