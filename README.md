@@ -52,19 +52,19 @@ Results in a proper:
 ### Helper classes
 I've created some helper classes to help you out with some other things. Like spacing, block level items etc.
 
-`sb-m-2` 
+`.sb-m-2` 
 gives you a spacing of 2px on top and bottom
 
-`sb-m-5` 
+`.sb-m-5` 
 gives you a spacing of 5px on top and bottom
 
-`sb-m-10` 
+`.sb-m-10` 
 gives you a spacing of 10px on top and bottom
 
-`sb-fw`
+`.sb-fw`
 sets the width of the buttons to a fixed with of 220px, making sure all buttons are equally with
 
-`sb-block`
+`.sb-block`
 displays the button as a block instead of inline
 
 `.sb-br-2`
@@ -84,7 +84,6 @@ centers the text
 
 
 ## Available buttons:
-<<<<<<< HEAD
  * `.sb-facebook`
  * `.sb-steam`
  * `.sb-spotify`
@@ -114,37 +113,6 @@ centers the text
  * `.sb-vimeo`
  * `.sb-vk`
  * `.sb-yahoo`
-=======
- * `sb-facebook`
- * `sb-steam`
- * `sb-spotify`
- * `sb-discord`
- * `sb-wordpress`
- * `sb-twitch`
- * `sb-teamspeak`
- * `sb-slack`
- * `sb-youtube`
- * `sb-paypal`
- * `sb-google`
- * `sb-bitbucket`
- * `sb-twitter`
- * `sb-reddit`
- * `sb-adn`
- * `sb-bitbucket`
- * `sb-dropbox`
- * `sb-flickr`
- * `sb-foursquare`
- * `sb-github`
- * `sb-microsoft`
- * `sb-odnoklassniki`
- * `sb-openid`
- * `sb-pinterest`
- * `sb-soundcloud`
- * `sb-tumblr`
- * `sb-vimeo`
- * `sb-vk`
- * `sb-yahoo`
->>>>>>> 86105d7fa2d32d369bf2733274baeda4b1bdbc8f
 
 ## Need another button?
 Open up an issue!
