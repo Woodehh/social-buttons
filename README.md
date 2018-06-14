@@ -33,21 +33,21 @@ To start a button simply create an A element with the sb and sb-* class. Where t
 ```
 Results in a proper:
 
-<img src="_demo-images/demo-facebook.png" style="width: 250px">
+<img src="_demo-images/demo-facebook.png" width=250>
 
 ```html
 <a href="#" class="sb sb-twitter">Sign in with Twitter</a>
 ```
 Results in a proper:
 
-<img src="_demo-images/demo-twitter.png" style="width: 250px">
+<img src="_demo-images/demo-twitter.png" width=250>
 
 ```html
 <a href="#" class="sb sb-twitter">Sign in with Google</a>
 ```
 Results in a proper:
 
-<img src="_demo-images/demo-google.png" style="width: 250px">
+<img src="_demo-images/demo-google.png" width=250>
 
 ### Helper classes
 I've created some helper classes to help you out with some other things. Like spacing, block level items etc.
