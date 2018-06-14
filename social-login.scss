@@ -1,0 +1,149 @@
+.sb {
+		
+	& {
+		display: inline-block;
+		height: 40px;
+		color: white !important;
+		font-family: sans-serif;
+		padding-right: 15px;
+		font-size: 15px;	
+		text-decoration: none;
+		overflow: hidden;
+		border: 1px solid transparent;
+		
+	}
+	
+	&::before {
+		font-family: "Font Awesome 5 Brands";
+		text-align: center;
+		width: 40px;
+		height: 100%;
+		display: inline-block;
+		font-size: 25px;
+		margin-right: 10px;
+		line-height: 40px;
+		margin-bottom: 2px;
+		vertical-align: middle;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: white !important;
+	}
+	
+	&.sb-nb {
+		border: 1px solid transparent;
+	}
+	
+	&.sb-ct {
+		text-align: center;
+	}
+	
+	&.sb-fw {
+		width: 220px;
+	}
+	
+	&.sb-m-2 {
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}	
+	
+	&.sb-m-5 {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	
+	&.sb-m-10 {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	&.sb-b {
+		display: block;
+	}
+	
+	&.sb-br-2 {
+		border-radius: 2px;
+	}
+	
+	&.sb-br-5 {
+		border-radius: 5px;
+	}
+	
+	&.sb-br-10 {
+		border-radius: 10px;
+	}
+}
+
+@mixin sb-button($color-primary, $content, $icon-size: false, $font-color: false) {
+	
+	$color-border: darken($color-primary,10%);
+	$color-secondary:  lighten($color-primary, 5%);
+	
+	$color-primary-hover:  lighten($color-primary, 5%);
+	$color-secondary-hover:  lighten($color-secondary, 5%);
+	
+	&::before {
+	  background-color: $color-primary;
+	  content: $content;	  
+	}
+	
+	& {
+	  background-color:$color-secondary;  
+	  border-color: $color-border;
+	}
+	
+	& when not ($icon-size = false) {
+		font-size: $font-size;
+	}	  
+	
+	& when not ($font-color = false) {
+		color: $font-color;
+	}
+	
+	&:hover::before {
+	  background-color: $color-primary-hover;
+	}
+	
+	&:hover {
+	  background-color: $color-secondary-hover;
+	}
+}
+
+.sb-linkedin  		{ @mixin sb-button(#0173B2,"\f0e1"); }
+.sb-paypal  		{ @mixin sb-button(#195D82,"\f1ed"); }
+.sb-facebook 		{ @mixin sb-button(#3C5B9B,"\f39e"); }
+.sb-google 			{ @mixin sb-button(#F63D27,"\f0d5"); }
+.sb-bitbucket 		{ @mixin sb-button(#205081,"\f171"); }
+.sb-twitter 		{ @mixin sb-button(#2DAAE1,"\f099"); }
+.sb-reddit 			{ @mixin sb-button(#FF4500,"\f281"); }
+.sb-flickr       	{ @mixin sb-button(#ff0084,"\f16e"); }
+.sb-adn           	{ @mixin sb-button(#d87a68,"\f170"); }
+.sb-dropbox      	{ @mixin sb-button(#1087dd,"\f16b"); }
+.sb-foursquare    	{ @mixin sb-button(#f94877,"\f180"); }
+.sb-github       	{ @mixin sb-button(#444444,"\f09b"); }
+.sb-microsoft     	{ @mixin sb-button(#2672ec,"\f3ca"); }
+.sb-odnoklassniki 	{ @mixin sb-button(#f4731c,"\f263"); }
+.sb-openid        	{ @mixin sb-button(#f7931e,"\f19b"); }
+.sb-pinterest     	{ @mixin sb-button(#cb2027,"\f0d2"); }
+.sb-soundcloud    	{ @mixin sb-button(#ff5500,"\f1be"); }
+.sb-tumblr        	{ @mixin sb-button(#2c4762,"\f173"); }
+.sb-vimeo         	{ @mixin sb-button(#1ab7ea,"\f40a"); }
+.sb-vk            	{ @mixin sb-button(#587ea3,"\f189"); }
+.sb-yahoo         	{ @mixin sb-button(#720e9e,"\f19e"); }
+.sb-instagram		{ @mixin sb-button(#275A85,"\f16d"); }
+.sb-youtube			{ @mixin sb-button(#CE1312,"\f167"); }
+.sb-discord			{ @mixin sb-button(#8C9EFF,"\f392"); }
+.sb-wordpress		{ @mixin sb-button(#32373C,"\f19a"); }
+.sb-twitch			{ @mixin sb-button(#6441A4,"\f1e8"); }
+.sb-teamspeak		{ @mixin sb-button(#445277,"\f4f9"); }
+.sb-slack			{ @mixin sb-button(#2D333A,"\f198"); }
+.sb-spotify			{ @mixin sb-button(#1ED760,"\f1bc"); }
+.sb-steam			{ @mixin sb-button(#3A3A3A,"\f1b6"); }
+
+
+
+
+
+
+
