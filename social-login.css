@@ -23,6 +23,7 @@
 }
 .sb:hover {
   text-decoration: none;
+  color: white;
 }
 .sb.sb-nb {
   border: 1px solid transparent;
