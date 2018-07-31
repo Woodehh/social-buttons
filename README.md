@@ -26,7 +26,7 @@ A typical Social Login button is build up from an A element. I plan to support b
 
 | **For a quick lookup: See the [index.html](index.html) example list!**
 
-To start a button simply create an A element with the sb and sb-* class. Where the * is the vendor you're looking for. For example:
+To start a button simply create an A or <button> element with the sb and sb-* class. Where the * is the vendor you're looking for. For example:
 
 ```html
 <a href="#" class="sb sb-facebook">Sign in with Facebook</a>

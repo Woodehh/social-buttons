@@ -73,6 +73,31 @@
 	&.sb-br-10 {
 		border-radius: 10px;
 	}
+	
+	&.sb-fw.sb-xs {
+		width: 180px;
+	}
+	&.sb-xs {
+		font-size: 12px;
+		height: 30px;
+	}
+	&.sb-xs::before {
+		font-size: 15px;
+		line-height: 30px;
+		width: 30px;
+	}
+	
+	//button setup:
+	button&::before {
+		padding-left: 0px !important;
+		margin-left: -10px !important; 	
+	}
+	
+	button&.sb-fw::before {
+		padding-left: 0px !important;
+		margin-left: -15px !important; 	
+	}
+		
 }
 
 .sb-button(@color-primary, @content, @icon-size: false, @font-color: false) {

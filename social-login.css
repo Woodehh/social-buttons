@@ -58,6 +58,26 @@
 .sb.sb-br-10 {
   border-radius: 10px;
 }
+.sb.sb-fw.sb-xs {
+  width: 180px;
+}
+.sb.sb-xs {
+  font-size: 12px;
+  height: 30px;
+}
+.sb.sb-xs::before {
+  font-size: 15px;
+  line-height: 30px;
+  width: 30px;
+}
+button.sb::before {
+  padding-left: 0px !important;
+  margin-left: -10px !important;
+}
+button.sb.sb-fw::before {
+  padding-left: 0px !important;
+  margin-left: -15px !important;
+}
 .sb-linkedin {
   background-color: #0183cb;
   border-color: #01527f;
