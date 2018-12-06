@@ -43,7 +43,7 @@ Results in a proper:
 <img src="_demo-images/demo-twitter.png" width=250>
 
 ```html
-<a href="#" class="sb sb-twitter">Sign in with Google</a>
+<a href="#" class="sb sb-google">Sign in with Google</a>
 ```
 Results in a proper:
 
