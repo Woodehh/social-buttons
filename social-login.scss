@@ -88,12 +88,12 @@
 	}
 	
 	//button setup:
-	button&::before {
+	&::before {
 		padding-left: 0px !important;
 		margin-left: -10px !important; 	
 	}
 	
-	button&.sb-fw::before {
+	&.sb-fw::before {
 		padding-left: 0px !important;
 		margin-left: -15px !important; 	
 	}
@@ -118,11 +118,11 @@
 	  border-color: $color-border;
 	}
 	
-	& when not ($icon-size = false) {
+	@if ($icon-size != false) {
 		font-size: $font-size;
 	}	  
 	
-	& when not ($font-color = false) {
+	@if ($font-color != false) {
 		color: $font-color;
 	}
 	
