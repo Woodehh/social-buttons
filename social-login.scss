@@ -1,171 +1,270 @@
+
+button.sb {
+  &::before {
+    margin-left: -10px !important;
+  }
+}
+
 .sb {
-		
-	& {
-		display: inline-block;
-		height: 40px;
-		color: white !important;
-		font-family: sans-serif;
-		padding-right: 15px;
-		font-size: 15px;	
-		text-decoration: none;
-		overflow: hidden;
-		border: 1px solid transparent;
-		
-	}
-	
-	&::before {
-		font-family: "Font Awesome 5 Brands";
-		text-align: center;
-		width: 40px;
-		height: 100%;
-		display: inline-block;
-		font-size: 25px;
-		margin-right: 10px;
-		line-height: 40px;
-		margin-bottom: 2px;
-		vertical-align: middle;
-	}
 
-	&:hover {
-		text-decoration: none;
-		color: white !important;
-	}
-	
-	&.sb-nb {
-		border: 1px solid transparent;
-	}
-	
-	&.sb-ct {
-		text-align: center;
-	}
-	
-	&.sb-fw {
-		width: 220px;
-	}
-	
-	&.sb-m-2 {
-		margin-top: 2px;
-		margin-bottom: 2px;
-	}	
-	
-	&.sb-m-5 {
-		margin-top: 5px;
-		margin-bottom: 5px;
-	}
-	
-	&.sb-m-10 {
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
-	
-	&.sb-b {
-		display: block;
-	}
-	
-	&.sb-br-2 {
-		border-radius: 2px;
-	}
-	
-	&.sb-br-5 {
-		border-radius: 5px;
-	}
-	
-	&.sb-br-10 {
-		border-radius: 10px;
-	}
-	
-	&.sb-fw.sb-xs {
-		width: 180px;
-	}
-	&.sb-xs {
-		font-size: 12px;
-		height: 30px;
-	}
-	&.sb-xs::before {
-		font-size: 15px;
-		line-height: 30px;
-		width: 30px;
-	}
-	
-	//button setup:
-	&::before {
-		padding-left: 0px !important;
-		margin-left: -10px !important; 	
-	}
-	
-	&.sb-fw::before {
-		padding-left: 0px !important;
-		margin-left: -15px !important; 	
-	}
-		
+  & {
+    display: inline-block;
+    height: 40px;
+    color: white;
+    font-family: sans-serif;
+    padding-right: 15px;
+    font-size: 15px;
+    text-decoration: none;
+    overflow: hidden;
+    border: 1px solid transparent;
+
+  }
+
+  &::before {
+    font-family: "Font Awesome 5 Brands";
+    text-align: center;
+    width: 40px;
+    height: 100%;
+    display: inline-block;
+    font-size: 25px;
+    margin-right: 10px;
+    line-height: 40px;
+    margin-bottom: 2px;
+    vertical-align: middle;
+  }
+
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+
+  &.sb-nb {
+    border: 1px solid transparent;
+  }
+
+  &.sb-ct {
+    text-align: center;
+
+    &::before {
+      margin-left: -25px !important;
+    }
+  }
+
+
+  &.sb-fw {
+    width: 220px;
+  }
+
+  &.sb-m-2 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  &.sb-m-5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  &.sb-m-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &.sb-b {
+    display: block;
+  }
+
+  &.sb-br-2 {
+    border-radius: 2px;
+  }
+
+  &.sb-br-5 {
+    border-radius: 5px;
+  }
+
+  &.sb-br-10 {
+    border-radius: 10px;
+  }
+
+  &.sb-fw.sb-xs {
+    width: 180px;
+  }
+
+  &.sb-xs {
+    font-size: 12px;
+    height: 30px;
+  }
+
+  &.sb-xs::before {
+    font-size: 15px;
+    line-height: 30px;
+    width: 30px;
+  }
+
 }
 
-@mixin sb-button($color-primary, $content, $icon-size: false, $font-color: false){
-	
-	$color-border: darken($color-primary,10%);
-	$color-secondary:  lighten($color-primary, 5%);
-	
-	$color-primary-hover:  lighten($color-primary, 5%);
-	$color-secondary-hover:  lighten($color-secondary, 5%);
-	
-	&::before {
-	  background-color: $color-primary;
-	  content: $content;	  
-	}
-	
-	& {
-	  background-color:$color-secondary;  
-	  border-color: $color-border;
-	}
-	
-	@if ($icon-size != false) {
-		font-size: $font-size;
-	}	  
-	
-	@if ($font-color != false) {
-		color: $font-color;
-	}
-	
-	&:hover::before {
-	  background-color: $color-primary-hover;
-	}
-	
-	&:hover {
-	  background-color: $color-secondary-hover;
-	}
+@mixin sb-button($color-primary, $content, $font-color: false) {
+
+  $color-border: darken($color-primary, 10%);
+  $color-secondary: lighten($color-primary, 5%);
+
+  $color-primary-hover: lighten($color-primary, 5%);
+  $color-secondary-hover: lighten($color-secondary, 5%);
+
+
+
+  &::before {
+    background-color: $color-primary;
+    content: $content;
+  }
+
+  & {
+    background-color: $color-secondary;
+    border-color: $color-border;
+  }
+
+  @if ($font-color != false) {
+    & {
+      color: $font-color !important;
+    }
+    &::hover {
+      color: $font-color !important;
+    }
+  }
+
+  &:hover::before {
+    background-color: $color-primary-hover;
+  }
+
+  &:hover {
+    background-color: $color-secondary-hover;
+  }
 }
 
-.sb-linkedin  		{ @include sb-button(#0173B2,"\f0e1"); }
-.sb-paypal  		{ @include sb-button(#195D82,"\f1ed"); }
-.sb-facebook 		{ @include sb-button(#3C5B9B,"\f39e"); }
-.sb-google 			{ @include sb-button(#F63D27,"\f0d5"); }
-.sb-bitbucket 		{ @include sb-button(#205081,"\f171"); }
-.sb-twitter 		{ @include sb-button(#2DAAE1,"\f099"); }
-.sb-reddit 			{ @include sb-button(#FF4500,"\f281"); }
-.sb-flickr       	{ @include sb-button(#ff0084,"\f16e"); }
-.sb-adn           	{ @include sb-button(#d87a68,"\f170"); }
-.sb-dropbox      	{ @include sb-button(#1087dd,"\f16b"); }
-.sb-foursquare    	{ @include sb-button(#f94877,"\f180"); }
-.sb-github       	{ @include sb-button(#444444,"\f09b"); }
-.sb-microsoft     	{ @include sb-button(#2672ec,"\f3ca"); }
-.sb-odnoklassniki 	{ @include sb-button(#f4731c,"\f263"); }
-.sb-openid        	{ @include sb-button(#f7931e,"\f19b"); }
-.sb-pinterest     	{ @include sb-button(#cb2027,"\f0d2"); }
-.sb-soundcloud    	{ @include sb-button(#ff5500,"\f1be"); }
-.sb-tumblr        	{ @include sb-button(#2c4762,"\f173"); }
-.sb-vimeo         	{ @include sb-button(#1ab7ea,"\f40a"); }
-.sb-vk            	{ @include sb-button(#587ea3,"\f189"); }
-.sb-yahoo         	{ @include sb-button(#720e9e,"\f19e"); }
-.sb-instagram		{ @include sb-button(#275A85,"\f16d"); }
-.sb-youtube			{ @include sb-button(#CE1312,"\f167"); }
-.sb-discord			{ @include sb-button(#8C9EFF,"\f392"); }
-.sb-wordpress		{ @include sb-button(#32373C,"\f19a"); }
-.sb-twitch			{ @include sb-button(#6441A4,"\f1e8"); }
-.sb-teamspeak		{ @include sb-button(#445277,"\f4f9"); }
-.sb-slack			{ @include sb-button(#2D333A,"\f198"); }
-.sb-spotify			{ @include sb-button(#1ED760,"\f1bc"); }
-.sb-steam			{ @include sb-button(#3A3A3A,"\f1b6"); }
+.sb-linkedin {
+  @include sb-button(#0173B2, "\f0e1");
+}
 
+.sb-paypal {
+  @include sb-button(#195D82, "\f1ed");
+}
+
+.sb-facebook {
+  @include sb-button(#3C5B9B, "\f39e");
+}
+
+.sb-google {
+  @include sb-button(#F63D27, "\f0d5");
+}
+
+.sb-bitbucket {
+  @include sb-button(#205081, "\f171");
+}
+
+.sb-twitter {
+  @include sb-button(#2DAAE1, "\f099");
+}
+
+.sb-reddit {
+  @include sb-button(#FF4500, "\f281");
+}
+
+.sb-flickr {
+  @include sb-button(#ff0084, "\f16e");
+}
+
+.sb-adn {
+  @include sb-button(#d87a68, "\f170");
+}
+
+.sb-dropbox {
+  @include sb-button(#1087dd, "\f16b");
+}
+
+.sb-foursquare {
+  @include sb-button(#f94877, "\f180");
+}
+
+.sb-github {
+  @include sb-button(#444444, "\f09b");
+}
+
+.sb-microsoft {
+  @include sb-button(#2672ec, "\f3ca");
+}
+
+.sb-odnoklassniki {
+  @include sb-button(#f4731c, "\f263");
+}
+
+.sb-openid {
+  @include sb-button(#f7931e, "\f19b");
+}
+
+.sb-pinterest {
+  @include sb-button(#cb2027, "\f0d2");
+}
+
+.sb-soundcloud {
+  @include sb-button(#ff5500, "\f1be");
+}
+
+.sb-tumblr {
+  @include sb-button(#2c4762, "\f173");
+}
+
+.sb-vimeo {
+  @include sb-button(#1ab7ea, "\f40a");
+}
+
+.sb-vk {
+  @include sb-button(#587ea3, "\f189");
+}
+
+.sb-yahoo {
+  @include sb-button(#720e9e, "\f19e");
+}
+
+.sb-instagram {
+  @include sb-button(#275A85, "\f16d");
+}
+
+.sb-youtube {
+  @include sb-button(#CE1312, "\f167");
+}
+
+.sb-discord {
+  @include sb-button(#8C9EFF, "\f392");
+}
+
+.sb-wordpress {
+  @include sb-button(#32373C, "\f19a");
+}
+
+.sb-twitch {
+  @include sb-button(#6441A4, "\f1e8");
+}
+
+.sb-teamspeak {
+  @include sb-button(#445277, "\f4f9");
+}
+
+.sb-slack {
+  @include sb-button(#2D333A, "\f198");
+}
+
+.sb-spotify {
+  @include sb-button(#1ED760, "\f1bc");
+}
+
+.sb-steam {
+  @include sb-button(#3A3A3A, "\f1b6");
+}
+
+.sb-apple {
+  @include sb-button(#e7e7e7, "\f179", #000);
+}
 
 
 

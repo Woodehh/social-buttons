@@ -84,6 +84,7 @@ centers the text
 
 
 ## Available buttons:
+ * `.sb-apple`
  * `.sb-facebook`
  * `.sb-steam`
  * `.sb-spotify`

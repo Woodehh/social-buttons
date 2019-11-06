@@ -1,7 +1,12 @@
+@charset "UTF-8";
+button.sb::before {
+  margin-left: -10px !important;
+}
+
 .sb {
   display: inline-block;
   height: 40px;
-  color: white !important;
+  color: white;
   font-family: sans-serif;
   padding-right: 15px;
   font-size: 15px;
@@ -23,13 +28,16 @@
 }
 .sb:hover {
   text-decoration: none;
-  color: white !important;
+  color: white;
 }
 .sb.sb-nb {
   border: 1px solid transparent;
 }
 .sb.sb-ct {
   text-align: center;
+}
+.sb.sb-ct::before {
+  margin-left: -25px !important;
 }
 .sb.sb-fw {
   width: 220px;
@@ -70,21 +78,14 @@
   line-height: 30px;
   width: 30px;
 }
-button.sb::before {
-  padding-left: 0px !important;
-  margin-left: -10px !important;
-}
-button.sb.sb-fw::before {
-  padding-left: 0px !important;
-  margin-left: -15px !important;
+
+.sb-linkedin::before {
+  background-color: #0173B2;
+  content: "";
 }
 .sb-linkedin {
   background-color: #0183cb;
   border-color: #01527f;
-}
-.sb-linkedin::before {
-  background-color: #0173B2;
-  content: "\f0e1";
 }
 .sb-linkedin:hover::before {
   background-color: #0183cb;
@@ -92,13 +93,14 @@ button.sb.sb-fw::before {
 .sb-linkedin:hover {
   background-color: #0194e5;
 }
+
+.sb-paypal::before {
+  background-color: #195D82;
+  content: "";
+}
 .sb-paypal {
   background-color: #1d6c97;
   border-color: #113e57;
-}
-.sb-paypal::before {
-  background-color: #195D82;
-  content: "\f1ed";
 }
 .sb-paypal:hover::before {
   background-color: #1d6c97;
@@ -106,13 +108,14 @@ button.sb.sb-fw::before {
 .sb-paypal:hover {
   background-color: #217cad;
 }
+
+.sb-facebook::before {
+  background-color: #3C5B9B;
+  content: "";
+}
 .sb-facebook {
   background-color: #4366ad;
   border-color: #2e4576;
-}
-.sb-facebook::before {
-  background-color: #3C5B9B;
-  content: "\f39e";
 }
 .sb-facebook:hover::before {
   background-color: #4366ad;
@@ -120,13 +123,14 @@ button.sb.sb-fw::before {
 .sb-facebook:hover {
   background-color: #4f72bb;
 }
+
+.sb-google::before {
+  background-color: #F63D27;
+  content: "";
+}
 .sb-google {
   background-color: #f7533f;
   border-color: #e12009;
-}
-.sb-google::before {
-  background-color: #F63D27;
-  content: "\f0d5";
 }
 .sb-google:hover::before {
   background-color: #f7533f;
@@ -134,13 +138,14 @@ button.sb.sb-fw::before {
 .sb-google:hover {
   background-color: #f86958;
 }
+
+.sb-bitbucket::before {
+  background-color: #205081;
+  content: "";
+}
 .sb-bitbucket {
   background-color: #255d95;
   border-color: #163758;
-}
-.sb-bitbucket::before {
-  background-color: #205081;
-  content: "\f171";
 }
 .sb-bitbucket:hover::before {
   background-color: #255d95;
@@ -148,13 +153,14 @@ button.sb.sb-fw::before {
 .sb-bitbucket:hover {
   background-color: #2a69aa;
 }
+
+.sb-twitter::before {
+  background-color: #2DAAE1;
+  content: "";
+}
 .sb-twitter {
   background-color: #43b3e4;
   border-color: #1b8dc0;
-}
-.sb-twitter::before {
-  background-color: #2DAAE1;
-  content: "\f099";
 }
 .sb-twitter:hover::before {
   background-color: #43b3e4;
@@ -162,13 +168,14 @@ button.sb.sb-fw::before {
 .sb-twitter:hover {
   background-color: #5abce7;
 }
+
+.sb-reddit::before {
+  background-color: #FF4500;
+  content: "";
+}
 .sb-reddit {
   background-color: #ff581a;
   border-color: #cc3700;
-}
-.sb-reddit::before {
-  background-color: #FF4500;
-  content: "\f281";
 }
 .sb-reddit:hover::before {
   background-color: #ff581a;
@@ -176,13 +183,14 @@ button.sb.sb-fw::before {
 .sb-reddit:hover {
   background-color: #ff6a33;
 }
+
+.sb-flickr::before {
+  background-color: #ff0084;
+  content: "";
+}
 .sb-flickr {
   background-color: #ff1a90;
   border-color: #cc006a;
-}
-.sb-flickr::before {
-  background-color: #ff0084;
-  content: "\f16e";
 }
 .sb-flickr:hover::before {
   background-color: #ff1a90;
@@ -190,13 +198,14 @@ button.sb.sb-fw::before {
 .sb-flickr:hover {
   background-color: #ff339d;
 }
+
+.sb-adn::before {
+  background-color: #d87a68;
+  content: "";
+}
 .sb-adn {
   background-color: #dd8c7c;
   border-color: #ce563f;
-}
-.sb-adn::before {
-  background-color: #d87a68;
-  content: "\f170";
 }
 .sb-adn:hover::before {
   background-color: #dd8c7c;
@@ -204,13 +213,14 @@ button.sb.sb-fw::before {
 .sb-adn:hover {
   background-color: #e29e91;
 }
+
+.sb-dropbox::before {
+  background-color: #1087dd;
+  content: "";
+}
 .sb-dropbox {
   background-color: #1894ee;
   border-color: #0d6aad;
-}
-.sb-dropbox::before {
-  background-color: #1087dd;
-  content: "\f16b";
 }
 .sb-dropbox:hover::before {
   background-color: #1894ee;
@@ -218,13 +228,14 @@ button.sb.sb-fw::before {
 .sb-dropbox:hover {
   background-color: #309ff0;
 }
+
+.sb-foursquare::before {
+  background-color: #f94877;
+  content: "";
+}
 .sb-foursquare {
   background-color: #fa6189;
   border-color: #f71752;
-}
-.sb-foursquare::before {
-  background-color: #f94877;
-  content: "\f180";
 }
 .sb-foursquare:hover::before {
   background-color: #fa6189;
@@ -232,13 +243,14 @@ button.sb.sb-fw::before {
 .sb-foursquare:hover {
   background-color: #fb799c;
 }
+
+.sb-github::before {
+  background-color: #444444;
+  content: "";
+}
 .sb-github {
   background-color: #515151;
   border-color: #2b2b2b;
-}
-.sb-github::before {
-  background-color: #444444;
-  content: "\f09b";
 }
 .sb-github:hover::before {
   background-color: #515151;
@@ -246,13 +258,14 @@ button.sb.sb-fw::before {
 .sb-github:hover {
   background-color: #5e5e5e;
 }
+
+.sb-microsoft::before {
+  background-color: #2672ec;
+  content: "";
+}
 .sb-microsoft {
   background-color: #3d81ee;
   border-color: #125acd;
-}
-.sb-microsoft::before {
-  background-color: #2672ec;
-  content: "\f3ca";
 }
 .sb-microsoft:hover::before {
   background-color: #3d81ee;
@@ -260,13 +273,14 @@ button.sb.sb-fw::before {
 .sb-microsoft:hover {
   background-color: #5590f0;
 }
+
+.sb-odnoklassniki::before {
+  background-color: #f4731c;
+  content: "";
+}
 .sb-odnoklassniki {
   background-color: #f58234;
   border-color: #d35b0a;
-}
-.sb-odnoklassniki::before {
-  background-color: #f4731c;
-  content: "\f263";
 }
 .sb-odnoklassniki:hover::before {
   background-color: #f58234;
@@ -274,13 +288,14 @@ button.sb.sb-fw::before {
 .sb-odnoklassniki:hover {
   background-color: #f6914d;
 }
+
+.sb-openid::before {
+  background-color: #f7931e;
+  content: "";
+}
 .sb-openid {
   background-color: #f89f37;
   border-color: #da7908;
-}
-.sb-openid::before {
-  background-color: #f7931e;
-  content: "\f19b";
 }
 .sb-openid:hover::before {
   background-color: #f89f37;
@@ -288,13 +303,14 @@ button.sb.sb-fw::before {
 .sb-openid:hover {
   background-color: #f9ab4f;
 }
+
+.sb-pinterest::before {
+  background-color: #cb2027;
+  content: "";
+}
 .sb-pinterest {
   background-color: #dd272f;
   border-color: #9f191f;
-}
-.sb-pinterest::before {
-  background-color: #cb2027;
-  content: "\f0d2";
 }
 .sb-pinterest:hover::before {
   background-color: #dd272f;
@@ -302,13 +318,14 @@ button.sb.sb-fw::before {
 .sb-pinterest:hover {
   background-color: #e03e44;
 }
+
+.sb-soundcloud::before {
+  background-color: #ff5500;
+  content: "";
+}
 .sb-soundcloud {
   background-color: #ff661a;
   border-color: #cc4400;
-}
-.sb-soundcloud::before {
-  background-color: #ff5500;
-  content: "\f1be";
 }
 .sb-soundcloud:hover::before {
   background-color: #ff661a;
@@ -316,27 +333,29 @@ button.sb.sb-fw::before {
 .sb-soundcloud:hover {
   background-color: #ff7733;
 }
-.sb-tumblr {
-  background-color: #345474;
-  border-color: #1c2d3f;
-}
+
 .sb-tumblr::before {
   background-color: #2c4762;
-  content: "\f173";
+  content: "";
+}
+.sb-tumblr {
+  background-color: #345474;
+  border-color: #1c2e3f;
 }
 .sb-tumblr:hover::before {
   background-color: #345474;
 }
 .sb-tumblr:hover {
-  background-color: #3c6085;
+  background-color: #3c6185;
+}
+
+.sb-vimeo::before {
+  background-color: #1ab7ea;
+  content: "";
 }
 .sb-vimeo {
   background-color: #31beec;
   border-color: #1295bf;
-}
-.sb-vimeo::before {
-  background-color: #1ab7ea;
-  content: "\f40a";
 }
 .sb-vimeo:hover::before {
   background-color: #31beec;
@@ -344,13 +363,14 @@ button.sb.sb-fw::before {
 .sb-vimeo:hover {
   background-color: #49c6ee;
 }
+
+.sb-vk::before {
+  background-color: #587ea3;
+  content: "";
+}
 .sb-vk {
   background-color: #678bad;
   border-color: #466482;
-}
-.sb-vk::before {
-  background-color: #587ea3;
-  content: "\f189";
 }
 .sb-vk:hover::before {
   background-color: #678bad;
@@ -358,13 +378,14 @@ button.sb.sb-fw::before {
 .sb-vk:hover {
   background-color: #7897b6;
 }
+
+.sb-yahoo::before {
+  background-color: #720e9e;
+  content: "";
+}
 .sb-yahoo {
   background-color: #8310b5;
   border-color: #500a6f;
-}
-.sb-yahoo::before {
-  background-color: #720e9e;
-  content: "\f19e";
 }
 .sb-yahoo:hover::before {
   background-color: #8310b5;
@@ -372,13 +393,14 @@ button.sb.sb-fw::before {
 .sb-yahoo:hover {
   background-color: #9412cd;
 }
+
+.sb-instagram::before {
+  background-color: #275A85;
+  content: "";
+}
 .sb-instagram {
   background-color: #2d6799;
   border-color: #1b3f5e;
-}
-.sb-instagram::before {
-  background-color: #275A85;
-  content: "\f16d";
 }
 .sb-instagram:hover::before {
   background-color: #2d6799;
@@ -386,13 +408,14 @@ button.sb.sb-fw::before {
 .sb-instagram:hover {
   background-color: #3375ac;
 }
+
+.sb-youtube::before {
+  background-color: #CE1312;
+  content: "";
+}
 .sb-youtube {
   background-color: #e51514;
   border-color: #9f0f0e;
-}
-.sb-youtube::before {
-  background-color: #CE1312;
-  content: "\f167";
 }
 .sb-youtube:hover::before {
   background-color: #e51514;
@@ -400,13 +423,14 @@ button.sb.sb-fw::before {
 .sb-youtube:hover {
   background-color: #ec2827;
 }
+
+.sb-discord::before {
+  background-color: #8C9EFF;
+  content: "";
+}
 .sb-discord {
   background-color: #a6b4ff;
   border-color: #5973ff;
-}
-.sb-discord::before {
-  background-color: #8C9EFF;
-  content: "\f392";
 }
 .sb-discord:hover::before {
   background-color: #a6b4ff;
@@ -414,13 +438,14 @@ button.sb.sb-fw::before {
 .sb-discord:hover {
   background-color: #bfc9ff;
 }
+
+.sb-wordpress::before {
+  background-color: #32373C;
+  content: "";
+}
 .sb-wordpress {
   background-color: #3e444a;
   border-color: #1b1e20;
-}
-.sb-wordpress::before {
-  background-color: #32373C;
-  content: "\f19a";
 }
 .sb-wordpress:hover::before {
   background-color: #3e444a;
@@ -428,13 +453,14 @@ button.sb.sb-fw::before {
 .sb-wordpress:hover {
   background-color: #495158;
 }
+
+.sb-twitch::before {
+  background-color: #6441A4;
+  content: "";
+}
 .sb-twitch {
   background-color: #6f48b6;
   border-color: #4e337f;
-}
-.sb-twitch::before {
-  background-color: #6441A4;
-  content: "\f1e8";
 }
 .sb-twitch:hover::before {
   background-color: #6f48b6;
@@ -442,13 +468,14 @@ button.sb.sb-fw::before {
 .sb-twitch:hover {
   background-color: #7d5abe;
 }
+
+.sb-teamspeak::before {
+  background-color: #445277;
+  content: "";
+}
 .sb-teamspeak {
   background-color: #4d5d87;
   border-color: #313c57;
-}
-.sb-teamspeak::before {
-  background-color: #445277;
-  content: "\f4f9";
 }
 .sb-teamspeak:hover::before {
   background-color: #4d5d87;
@@ -456,13 +483,14 @@ button.sb.sb-fw::before {
 .sb-teamspeak:hover {
   background-color: #576897;
 }
+
+.sb-slack::before {
+  background-color: #2D333A;
+  content: "";
+}
 .sb-slack {
   background-color: #384048;
   border-color: #171a1d;
-}
-.sb-slack::before {
-  background-color: #2D333A;
-  content: "\f198";
 }
 .sb-slack:hover::before {
   background-color: #384048;
@@ -470,13 +498,14 @@ button.sb.sb-fw::before {
 .sb-slack:hover {
   background-color: #434c57;
 }
+
+.sb-spotify::before {
+  background-color: #1ED760;
+  content: "";
+}
 .sb-spotify {
   background-color: #2de26d;
   border-color: #18aa4c;
-}
-.sb-spotify::before {
-  background-color: #1ED760;
-  content: "\f1bc";
 }
 .sb-spotify:hover::before {
   background-color: #2de26d;
@@ -484,13 +513,14 @@ button.sb.sb-fw::before {
 .sb-spotify:hover {
   background-color: #43e57d;
 }
+
+.sb-steam::before {
+  background-color: #3A3A3A;
+  content: "";
+}
 .sb-steam {
   background-color: #474747;
   border-color: #212121;
-}
-.sb-steam::before {
-  background-color: #3A3A3A;
-  content: "\f1b6";
 }
 .sb-steam:hover::before {
   background-color: #474747;
@@ -498,3 +528,26 @@ button.sb.sb-fw::before {
 .sb-steam:hover {
   background-color: #545454;
 }
+
+.sb-apple::before {
+  background-color: #e7e7e7;
+  content: "";
+}
+.sb-apple {
+  background-color: #f4f4f4;
+  border-color: #cecece;
+}
+.sb-apple {
+  color: #000 !important;
+}
+.sb-apple::hover {
+  color: #000 !important;
+}
+.sb-apple:hover::before {
+  background-color: #f4f4f4;
+}
+.sb-apple:hover {
+  background-color: white;
+}
+
+/*# sourceMappingURL=social-login.css.map */
