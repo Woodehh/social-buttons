@@ -540,7 +540,7 @@ button.sb::before {
 .sb-apple {
   color: #000 !important;
 }
-.sb-apple::hover {
+.sb-apple:hover {
   color: #000 !important;
 }
 .sb-apple:hover::before {
